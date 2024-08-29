@@ -115,7 +115,7 @@ async function main() {
 
     // Add an event listener for hamburger
     document.querySelector(".hamburger").addEventListener("click", ()=>{
-        document.querySelector(".left").style.left = "0"
+        document.querySelector(".left").classList.toggle("show");
     })
     document.querySelector(".cross").addEventListener("click", ()=>{
         document.querySelector(".left").style.left = "-100%"
